@@ -7,9 +7,10 @@
   </head>
   <body>
     <?php include 'assets/php/nav.php'; ?>
+
     test
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <?php include 'assets/php/footer.php'; ?>
 
+    <?php include 'assets/php/footer.php'; ?>
   </body>
 </html>

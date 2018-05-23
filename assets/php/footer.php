@@ -46,10 +46,10 @@
                     </ul>
                 </div>
                 <div class="col-md-3 social-networks">
-                    <div></div><a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="telephone"><i class="fa fa-phone"></i></a>
                     <a href="#" class="email"><i class="fa fa-envelope"></i></a>
-                    <a href="#" class="adresse"><i class="fa fa-map-marker"></i></a>
+                    <a href="https://goo.gl/maps/5pnfgpeVS4C2" class="adresse"><i class="fa fa-map-marker"></i></a>
 
                     <button
                         class="btn btn-primary" type="button" style="margin-top:20px;">Contact us</button>

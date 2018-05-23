@@ -4,7 +4,6 @@
   color:white;
   padding-top:0px;
   margin-bottom: 0px;
-  padding-right: 100%;
 }
 
 #myfooter .telephone {
@@ -68,9 +67,20 @@
 }
 
 #myFooter .facebook:hover {
-  color:#0077e2;
+  color:#117a8b;
 }
 
+#myFooter .telephone:hover {
+  color: #117a8b;
+}
+
+#myFooter .email:hover {
+  color: #117a8b;
+}
+
+#myFooter .adresse:hover {
+  color: #117a8b;
+}
 
 #myFooter .btn {
   color:white;

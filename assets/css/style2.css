@@ -1,0 +1,36 @@
+body {
+  background: linear-gradient(rgba(226, 146, 59, 1), rgba(204, 150, 226, 1));
+  /*background-color: rgb(225, 202, 196);*/
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.navbrand {
+  color: #d84b6b;
+  margin-left: 21%;
+  margin-top: -18%;
+}
+
+.map {
+  margin-left: 20%;
+  margin-top: 20%;
+  padding: 20%;
+}
+
+.textfooter {
+  margin-left: 20%;
+}
+
+#myfooter .telephone {
+  margin-left: 20%;
+}
+
+.email {
+  margin-left: 20%;
+}
+
+.adresse {
+  margin-left: 20%;
+}

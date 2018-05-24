@@ -18,7 +18,7 @@
 
                 </div>
                 <div class="textfooter row text-center">
-                <div class="col-12 col-sm-6 col-md-2">
+                <!-- <div class="col-12 col-sm-6 col-md-2">
                     <h5>Get started</h5>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -44,15 +44,19 @@
                         <li><a href="#">Forums</a></li>
                         <li><a href="#">External Links</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="col-md-3 social-networks">
-                    <a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="telephone"><i class="fa fa-phone"></i></a>
-                    <a href="#" class="email"><i class="fa fa-envelope"></i></a>
-                    <a href="https://goo.gl/maps/5pnfgpeVS4C2" class="adresse"><i class="fa fa-map-marker"></i></a>
+                    <ul>
+                      <li><a class="adresse"><i class="fa fa-map-marker">&nbsp;Place&nbsp;de&nbsp;la&nbsp;Rébuplique&nbsp;-&nbsp;66270&nbsp;Le&nbsp;Soler</i></a></li>
+                      <li><a class="telephone"><i class="fa fa-phone">&nbsp;04&nbsp;68&nbsp;92&nbsp;52&nbsp;05</i></a></li>
+                      <li><a class="email"><i class="fa fa-envelope">&nbsp;brindebeautelesoler@gmail.com</i></a></li>
+                      <li class="" role="presentation"><a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook" aria-hidden="true">&nbsp;Le&nbsp;Brin&nbsp;de&nbsp;Beauté</i></a></li>
+                    </ul>
 
-                    <button
-                        class="btn btn-primary" type="button" style="margin-top:20px;">Contact us</button>
+                    <img src="./img/guinot-logo.png" alt="logo de Guinot">
+
+
+                    <!-- <button class="btn btn-primary" type="button" style="margin-top:20px;">Contact us</button> -->
                 </div>
             </div>
           </div>

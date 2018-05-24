@@ -16,8 +16,8 @@
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="../../accueil.php" style="color:#ffffff;"><i class="fa fa-home"></i>&nbsp;Accueil</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="../../catalogue.php" style="color:#ffffff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Produits</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="./accueil.php" style="color:#ffffff;"><i class="fa fa-home"></i>&nbsp;Accueil</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="./catalogue.php" style="color:#ffffff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Produits</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color:#ffffff;"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>&nbsp;Services</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color:#ffffff;"><i class="fa fa-user-circle-o"></i>&nbsp;Portfolio</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="./connexion.php" style="color:#ffffff;"><i class="fa fa-sign-in"></i>&nbsp;Se connecter</a></li>

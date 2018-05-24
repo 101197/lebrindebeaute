@@ -53,8 +53,6 @@
                       <li class="" role="presentation"><a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook" aria-hidden="true">&nbsp;Le&nbsp;Brin&nbsp;de&nbsp;Beauté</i></a></li>
                     </ul>
 
-                    <img src="./img/guinot-logo.png" alt="logo de Guinot">
-
 
                     <!-- <button class="btn btn-primary" type="button" style="margin-top:20px;">Contact us</button> -->
                 </div>

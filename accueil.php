@@ -12,9 +12,11 @@
       <div class="bandeprincipale row mh-100vh">
         <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 align-self-center d-lg-flex align-items-lg-center align-self-lg-stretch bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
 
-      test
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div> 
+
+
+          
+        </div>
+      </div>
     </div>
 
     <?php include 'assets/php/footer.php'; ?>

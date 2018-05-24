@@ -12,13 +12,14 @@ body {
 }
 
 .map {
-  margin-left: 20%;
-  margin-top: 20%;
+  margin-left: 16%;
+  margin-top: 0%;
   padding: 20%;
 }
 
 .textfooter {
   margin-left: 20%;
+  margin-top: 6%;
 }
 
 #myfooter .telephone {

@@ -1,0 +1,6 @@
+faire un onglet d'administration
+  -changement des offres
+  -des prix
+  -des Services
+  -bref tout ce qui touche a la bdd
+  -faire un acces aux donnees des clients?

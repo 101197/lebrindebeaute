@@ -25,8 +25,8 @@
                   <li class="nav-item" role="presentation"><a class="nav-link active" href="./accueil" style="color:#ffffff;"><i class="fa fa-home"></i>&nbsp;Accueil</a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link active" href="./catalogue" style="color:#ffffff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Produits</a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link active" href="./services" style="color:#ffffff;"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>&nbsp;Services</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="color:#ffffff;"><i class="fa fa-user-circle-o"></i>&nbsp;Portfolio</a></li>
-                  <li class="nav-item" role="presentation"><a class="nav-link active" href="./connexion.php" style="color:#ffffff;"><i class="fa fa-sign-in"></i>&nbsp;Se connecter</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="./inscription" style="color:#ffffff;"><i class="fa fa-user-circle-o"></i>&nbsp;S'inscrire</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="./connexion" style="color:#ffffff;"><i class="fa fa-sign-in"></i>&nbsp;Se connecter</a></li>
                 </ul>
               </div>
             </div>

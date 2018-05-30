@@ -23,18 +23,18 @@
           if(!empty($_POST['pseudo']) AND !empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
             $pseudolength = strlen($pseudo);
             if($pseudolength <= 20) {
-              $reqpseudo = $bdd->prepare("SELECT * FROM user WHERE Pseudo = ?");
+              $reqpseudo = $bdd->prepare("SELECT * FROM client WHERE Pseudo = ?");
               $reqpseudo->execute(array($pseudo));
               $pseudoexist = $reqpseudo->rowCount();
               if($pseudoexist == 0) {
                 if($mail == $mail2) {
                   if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-                    $reqmail = $bdd->prepare("SELECT * FROM user WHERE email = ?");
+                    $reqmail = $bdd->prepare("SELECT * FROM client WHERE Mail = ?");
                     $reqmail->execute(array($mail));
                     $mailexist = $reqmail->rowCount();
                     if($mailexist == 0) {
                       if($mdp == $mdp2) {
-                        $insertmbr = $bdd->prepare("INSERT INTO user(Pseudo, email, MotDePasse, Nom, Prenom, Telephone) VALUES(?, ?, ?, ?, ?, ?)");
+                        $insertmbr = $bdd->prepare("INSERT INTO client(Pseudo, Mail, MotDePasse, Nom, Prenom, Telephone) VALUES(?, ?, ?, ?, ?, ?)");
                         $insertmbr->execute(array($pseudo, $mail, $mdp, $nom, $prenom, $telephone));
                         $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/accueil.php\"><br />Revenir sur la page d'accueil<br /></a><a href=\"/connexion.php\"><br />Se connecter!</a>";
                       } else {

@@ -10,7 +10,7 @@
 
 <body>
   <?php
-  /* require 'setbdd.php'; */
+    require 'setbdd.php';
   ?>
 
     <div>

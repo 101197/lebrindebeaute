@@ -1,7 +1,7 @@
 
-    <?php include 'assets/php/allcss.php'; ?>
 
   <?php
+    //include 'assets/php/allcss.php';
     include 'include.php';
   ?>
 

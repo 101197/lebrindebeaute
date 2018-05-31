@@ -7,7 +7,8 @@
   </head>
   <body>
     <?php include 'assets/php/nav.php'; ?>
-
+<?php $reponse = $bdd->query('SELECT * FROM client');
+echo $reponse;?>
 
     <div class="container-fluid">
       <div class="bandeprincipale row mh-100vh">

@@ -14,13 +14,13 @@
           $mailconnect = htmlspecialchars($_POST['mailconnect']);
           $mdpconnect = sha1($_POST['mdpconnect']);
           if(!empty($mailconnect) AND !empty($mdpconnect)) {
-            $requser = $bdd->prepare("SELECT client.IDClient, client.Email FROM user WHERE Email = ? AND MotDePasse = ?");
+            $requser = $bdd->prepare("SELECT client.IDClient, client.Mail FROM client WHERE Mail = ? AND Mdp = ?");
             $requser->execute(array($mailconnect, $mdpconnect));
             $userexist = $requser->rowCount();
             if($userexist == 1) {
               $userinfo = $requser->fetch();
               $_SESSION['id'] = $userinfo['IDClient'];
-              $_SESSION['mail'] = $userinfo['Email'];
+              $_SESSION['mail'] = $userinfo['Mail'];
             } else {
               $erreur = "<br>Mauvais mail ou mauvais mot de passe !";
             }

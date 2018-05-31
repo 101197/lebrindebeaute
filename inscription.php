@@ -34,7 +34,7 @@
                     $mailexist = $reqmail->rowCount();
                     if($mailexist == 0) {
                       if($mdp == $mdp2) {
-                        $insertmbr = $bdd->prepare("INSERT INTO client(Pseudo, Mail, MotDePasse, Nom, Prenom, Telephone) VALUES(?, ?, ?, ?, ?, ?)");
+                        $insertmbr = $bdd->prepare("INSERT INTO client(Pseudo, Mail, Mdp, Nom, Prenom, Telephone) VALUES(?, ?, ?, ?, ?, ?)");
                         $insertmbr->execute(array($pseudo, $mail, $mdp, $nom, $prenom, $telephone));
                         $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/accueil.php\"><br />Revenir sur la page d'accueil<br /></a><a href=\"/connexion.php\"><br />Se connecter!</a>";
                       } else {

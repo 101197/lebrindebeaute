@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
     <?php include 'allcss.php'; ?>
-</head>
 
-<body>
     <footer id="myFooter">
         <div class="container-fluid">
             <div class="row text-center">
@@ -63,6 +55,3 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>

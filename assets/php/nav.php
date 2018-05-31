@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
     <?php include 'assets/php/allcss.php'; ?>
-</head>
 
-<body>
   <?php
     include 'include.php';
   ?>
@@ -70,6 +62,3 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>

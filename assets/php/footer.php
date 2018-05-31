@@ -1,12 +1,9 @@
-
-    <?php include 'allcss.php'; ?>
-
     <footer id="myFooter">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-12 col-sm-6 col-md-3">
                     <!-- <h1 class="logo" style="margin-top:30px;"><a href="#">&nbsp;LOGO&nbsp;</a></h1> -->
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11732.03133264411!2d2.7934539!3d42.6823764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3fa136135e70af9!2sInstitut+Le+Brin+de+Beaut%C3%A9!5e0!3m2!1sfr!2sfr!4v1526977004589" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11732.03133264411!2d2.7934539!3d42.6823764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3fa136135e70af9!2sInstitut+Le+Brin+de+Beaut%C3%A9!5e0!3m2!1sfr!2sfr!4v1526977004589" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                 </div>
                 <div class="textfooter row text-center">

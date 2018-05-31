@@ -3,7 +3,7 @@
   background-color:#3c3d41;
   color:white;
   padding-top:0px;
-  margin-bottom: 0px;
+  margin: 0px;
   width: 100%;
 }
 
@@ -53,11 +53,15 @@
 }
 
 #myFooter .social-networks a {
-  font-size:32px;
+  font-size:27px;
   color:#f9f9f9;
-  padding:14%;
+  padding:20%;
   transition:0.2s;
-  margin-left: 29%;
+  margin-left: 60%;
+}
+
+#myFooter .social-networks i {
+  margin-top: 20%;
 }
 
 #myFooter .social-networks a:hover {

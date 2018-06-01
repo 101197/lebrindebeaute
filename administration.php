@@ -9,6 +9,8 @@
 </head>
 
 <body>
+  <?php include 'assets/php/nav.php'; ?>
+
     <div class="card">
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" role="tablist">
@@ -33,6 +35,8 @@
     </div>
     </div>
     </div>
+    <?php include 'assets/php/footer.php'; ?>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

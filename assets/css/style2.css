@@ -40,3 +40,9 @@ body {
   margin-left: 0%;
   min-height: 110vh;
 }
+
+.card {
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}

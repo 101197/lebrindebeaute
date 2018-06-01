@@ -22,8 +22,11 @@
         <div class="card-body">
             <div id="nav-tabContent" class="tab-content">
                 <div id="item-1-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="item-1-1-tab">
-                    <h4>Mes clients</h4>
-                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-primary" type="button">Button</button></div>
+                  <h4>Mes clients</h4><br>
+                  <?php include 'assets/php/tabclients.php'; ?>
+
+                  <!--<button class="btn btn-primary" type="button">Button</button>-->
+                </div>
                 <div
                     id="item-1-2" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-2-tab">
                     <h4>Second Item Title</h4>

@@ -1,4 +1,3 @@
-<?php require 'setting.bdd.php' ?>
 <div class="table-responsive">
     <table class="table">
         <thead>

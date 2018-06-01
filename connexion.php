@@ -55,9 +55,9 @@
                 }
               ?>
 
-              <div class="mdpoublie">
+              <!--<div class="mdpoublie">
                 <p class="mt-3 mb-0"><a href="#" class="text-info small">Mot de passe oublié?</a></p>
-              </div>
+              </div>-->
 
             </div>
           </div>

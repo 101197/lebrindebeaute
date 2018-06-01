@@ -22,23 +22,21 @@
 
                   <?php
                   if (isset($_SESSION['id'])) { //si on est connecté
-                    if ($_SESSION['statut'] == '1') { //si on est admin
-                      $adminoption = '<a class="dropdown-item" role="presentation" href="/modifierproduits">Modifier les produits</a>';
+                    if ($_SESSION['statut'] == '1') { // si on est admin
+                      $adminoption = '<li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a></li>';
+
                     } else { //si on est pas admin
                       $adminoption = ' ';
-                    }
+                    } //fin option admin
                     echo '
-                      <li class="dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
-                          <span>'.$_SESSION['pseudo'].'</span>
-                        </a>
-                        <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" role="presentation" href="/editionprofil.php"><i class="fa fa-id-badge" aria-hidden="true"></i>Editer mon profil</a>
-                          <a class="dropdown-item" role="presentation" href="/assets/php/deconnexion.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
-                        </div>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="./services" style="color:#ffffff;"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Mon profil</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="./deconnexion" style="color:#ffffff;"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Déconnexion</a>
                       </li>
                     ';
-                  }else { //si on est pas connecté
+                  } else { //si on est pas connecté
                     echo '
                       <li class="nav-item" role="presentation">
                         <a class="nav-link active" href="./inscription" style="color:#ffffff;"><i class="fa fa-user-circle-o"></i>&nbsp;S\'inscrire</a></li>

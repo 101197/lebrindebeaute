@@ -28,15 +28,15 @@
                       $adminoption = ' ';
                     }
                     echo '
-                    <li class="dropdown">
-                      <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
-                        <span>'.$_SESSION['pseudo'].'</span>
-                      </a>
-                      <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="/editionprofil.php"><i class="fa fa-id-badge" aria-hidden="true"></i>Editer mon profil</a>
-                        <a class="dropdown-item" role="presentation" href="/assets/php/deconnexion.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
-                      </div>
-                    </li>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
+                          <span>'.$_SESSION['pseudo'].'</span>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                          <a class="dropdown-item" role="presentation" href="/editionprofil.php"><i class="fa fa-id-badge" aria-hidden="true"></i>Editer mon profil</a>
+                          <a class="dropdown-item" role="presentation" href="/assets/php/deconnexion.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Déconnexion</a>
+                        </div>
+                      </li>
                     ';
                   }else { //si on est pas connecté
                     echo '

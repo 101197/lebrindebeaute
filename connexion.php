@@ -11,11 +11,11 @@
         include 'assets/php/nav.php';
 
         if(isset($_POST['formconnexion'])) {
-          $mailconnect = htmlspecialchars($_POST['mailconnect']);
+          $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
           $mdpconnect = sha1($_POST['mdpconnect']);
-          if(!empty($mailconnect) AND !empty($mdpconnect)) {
+          if(!empty($pseudoconnect) AND !empty($mdpconnect)) {
             $requser = $bdd->prepare("SELECT client.IDClient, client.Mail FROM client WHERE Mail = ? AND Mdp = ?");
-            $requser->execute(array($mailconnect, $mdpconnect));
+            $requser->execute(array($pseudoconnect, $mdpconnect));
             $userexist = $requser->rowCount();
             if($userexist == 1) {
               $userinfo = $requser->fetch();
@@ -39,14 +39,15 @@
               <h2 class="text-info font-weight-light mb-5"><i class="fa fa-diamond"></i>&nbsp;Se connecter</h2>
               <form method="POST">
                 <div class="form-group">
-                  <label class="text-secondary">Email</label>
-                  <input class="form-control" type="text" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,15}$" inputmode="email" name="mailconnect">
+                  <label class="text-secondary">Pseudo</label>
+                  <input class="form-control" type="text" name="pseudoconnect">
                 </div>
                 <div class="form-group">
                   <label class="text-secondary">Mot de passe</label>
-                  <input class="form-control" type="password" required="" name="mdpconnect">
+                  <input class="form-control" type="password" name="mdpconnect">
                 </div>
-                <button class="btn btn-info mt-2" type="submit" name="formconnexion">Connexion</button>
+                <input class="btn btn-info mt-2" type="submit" name="formconnexion" value="Connexion">
+                <!--<button class="btn btn-info mt-2" type="submit" name="formconnexion">Connexion</button>-->
               </form>
 
               <?php

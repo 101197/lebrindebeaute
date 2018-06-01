@@ -20,12 +20,12 @@
           $mdp2 = sha1($_POST['mdp2']);
           $telephone = htmlspecialchars($_POST['telephone']);
 
-          if(!empty($_POST['pseudo']) AND !empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['mdp']) AND !empty($_POST['mdp2'])) {
-            $pseudolength = strlen($pseudo);
+          if(!empty($_POST['pseudo']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['mdp']) && !empty($_POST['mdp2'])) {
+            $pseudolength = strlen($pseudo); //nb de caractères
             if($pseudolength <= 20) {
               $reqpseudo = $bdd->prepare("SELECT * FROM client WHERE Pseudo = ?");
               $reqpseudo->execute(array($pseudo));
-              $pseudoexist = $reqpseudo->rowCount();
+              $pseudoexist = $reqpseudo->rowCount(); //compte le nb de colonne existantes
               if($pseudoexist == 0) {
                 if($mail == $mail2) {
                   if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
@@ -117,7 +117,7 @@
               ?>
 
               <div class="mdpoublie">
-                <p class="mt-3 mb-0"><a href="#" class="text-info small">Mot de passe oublié?</a></p>
+                <p class="mt-3 mb-0"><a href="./connexion" class="text-info small">Déjà incrit? Connectez-vous!</a></p>
               </div>
 
             </div>

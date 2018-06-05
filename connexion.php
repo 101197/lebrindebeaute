@@ -22,7 +22,7 @@
               $_SESSION['id'] = $userinfo['IDClient'];
               $_SESSION['mail'] = $userinfo['Mail'];
             } else {
-              $erreur = "<br>Mauvais mail ou mauvais mot de passe !";
+              $erreur = "<br>Mauvais pseudo ou mauvais mot de passe !";
             }
           } else {
             $erreur = "<br>Tous les champs doivent être complétés !";

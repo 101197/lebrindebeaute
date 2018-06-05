@@ -14,13 +14,13 @@
           $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
           $mdpconnect = sha1($_POST['mdpconnect']);
           if(!empty($pseudoconnect) AND !empty($mdpconnect)) {
-            $requser = $bdd->prepare("SELECT client.IDClient, client.Mail FROM client WHERE Mail = ? AND Mdp = ?");
+            $requser = $bdd->prepare("SELECT client.IDClient, client.Pseudo FROM client WHERE Pseudo = ? AND Mdp = ?");
             $requser->execute(array($pseudoconnect, $mdpconnect));
             $userexist = $requser->rowCount();
             if($userexist == 1) {
               $userinfo = $requser->fetch();
               $_SESSION['id'] = $userinfo['IDClient'];
-              $_SESSION['mail'] = $userinfo['Mail'];
+              $_SESSION['pseudo'] = $userinfo['Pseudo'];
             } else {
               $erreur = "<br>Mauvais pseudo ou mauvais mot de passe !";
             }

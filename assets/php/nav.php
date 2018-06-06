@@ -22,7 +22,7 @@
 
                   <?php
                   if (isset($_SESSION['id'])) { //si on est connecté
-                    if ($_SESSION['pseudo'] == 'Admin') { // si on est admin
+                    if ($_SESSION['statut'] == '1') { // si on est admin
                       $adminoption = '<li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a></li>';
 
                     } else { //si on est pas admin

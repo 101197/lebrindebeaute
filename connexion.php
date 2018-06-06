@@ -46,8 +46,8 @@
                   <label class="text-secondary">Mot de passe</label>
                   <input class="form-control" type="password" name="mdpconnect">
                 </div>
-                <input class="btn btn-info mt-2" type="submit" name="formconnexion" value="Connexion">
-                <!--<button class="btn btn-info mt-2" type="submit" name="formconnexion">Connexion</button>-->
+                <input class="btn btn-info mt-2" type="submit" name="formconnexion" value="Connexion"/>
+
               </form>
 
               <?php

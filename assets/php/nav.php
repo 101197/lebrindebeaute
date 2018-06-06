@@ -22,7 +22,7 @@
 
                   <?php
                   if (isset($_SESSION['id'])) { //si on est connecté
-                    if ($_SESSION['statut'] == '1') { // si on est admin
+                    if ($_SESSION['pseudo'] == 'Admin') { // si on est admin
                       $adminoption = '<li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a></li>';
 
                     } else { //si on est pas admin
@@ -30,10 +30,10 @@
                     } //fin option admin
                     echo '
                       <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="./services" style="color:#ffffff;"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Mon profil</a>
+                        <a class="nav-link active" href="./profil" style="color:#ffffff;"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Mon profil</a>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <a class="nav-link active" href="./deconnexion" style="color:#ffffff;"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Déconnexion</a>
+                        <a class="nav-link active" href="/assets/php/deconnexion.php" style="color:#ffffff;"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Déconnexion</a>
                       </li>
                     ';
                   } else { //si on est pas connecté

@@ -47,3 +47,20 @@ body {
   transform: translateX(-50%);
   box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.4);
 }
+
+.designprofil {
+  text-align: center;
+}
+
+.infoprofil {
+  list-style-type:none;
+}
+
+.imgprofilneutre {
+  width: 30%;
+  margin-top: -80%;
+}
+
+.pseudoprofil {
+  margin-top: -28%;
+}

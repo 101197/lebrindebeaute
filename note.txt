@@ -3,4 +3,18 @@ faire un onglet d'administration
   -des prix
   -des Services
   -bref tout ce qui touche a la bdd
-  -faire un acces aux donnees des clients?
+  -faire un acces aux donnees des clients
+
+  plusieurs onglets:
+    -Mes clients
+      ->liste des infos des clients
+        ->Modifier clients
+
+    -Mes services
+      ->liste des services
+        ->Modifier et ajouter des services
+
+    -Mes produits
+      ->Liste des produits
+        ->Modifier et ajouter des produits
+        (-> Mettre bouton pour directement modifier page produits)

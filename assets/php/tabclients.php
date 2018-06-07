@@ -18,7 +18,7 @@
               echo "<td>".$row['Prenom']."</td>";
               echo "<td>".$row['Mail']."</td>";
               echo "<td>".$row['Telephone']."</td>";
-              echo '<td><button class="btn btn-primary form-btn" onclick="document.location.href = \'modifierclient.php?IDClient='.$row["IDClient"].'\'">Modifier</button></td>';
+              echo '<td><button class="btn btn-primary form-btn" onclick="document.location.href = \'modifierclient.php?IDClient='.$row["IDClient"].'\'">Modfier</button></td>'; //SI client non admin alors afficher bouton rendre admin (bleu ), SI client admin alors afficher bouton Retirer le statut d'admin (rouge rétrograder)
               echo "</tr>";
             }
             ?>

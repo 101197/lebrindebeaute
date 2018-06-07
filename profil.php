@@ -10,7 +10,7 @@
 
     <div class="container-fluid">
       <div class="bandeprincipale row mh-100vh">
-        <div class="col-10 col-sm-8 col-md-6 col-lg-6 offset-1 offset-sm-2 offset-md-3 offset-lg-0 d-lg-flex bg-white p-5 rounded rounded-lg-0 my-5 my-lg-0" id="login-block">
+        <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
           <div class="designprofil">
             <?php
@@ -29,7 +29,7 @@
               <li><b>E-mail: </b><?php echo $dbrep['Mail']; ?></li><br>
               <li><b>Téléphone: </b><?php echo $dbrep['Telephone']; ?></li>
             </ul>
-            <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierclient'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
+            <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierprofil'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
           </div>
 
 

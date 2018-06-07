@@ -21,6 +21,10 @@
               $userinfo = $requser->fetch();
               $_SESSION['id'] = $userinfo['IDClient'];
               $_SESSION['pseudo'] = $userinfo['Pseudo'];
+              //rafraichissement de la page ou redirection vers accueil
+              ?>
+              <meta http-equiv="refresh" content="0;./accueil" />
+              <?php
             } else {
               $erreur = "<br>Mauvais pseudo ou mauvais mot de passe !";
             }

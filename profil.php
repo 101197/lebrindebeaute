@@ -32,6 +32,7 @@
             <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierprofil'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
           </div>
 
+<?php echo $unclient->getNomClient(); ?>
 
 
         </div>

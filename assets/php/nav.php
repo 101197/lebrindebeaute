@@ -1,6 +1,12 @@
   <?php
     //include 'assets/php/allcss.php';
     include 'include.php';
+
+    //test si le client est connecté
+    if (isset($_SESSION['id'])) {
+      //reccupere le client
+      $unclient = getUser($_SESSION['id'], $bdd); //appelle la fonction qui crée l'objet client
+    }
   ?>
 
     <div>
@@ -22,7 +28,7 @@
 
                   <?php
                   if (isset($_SESSION['id'])) { //si on est connecté
-                    if ($_SESSION['pseudo'] == 'Admin') { // si on est admin
+                    if ($unclient->getStatutClient() == 1) { // si on est admin
                       $adminoption = '<li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a></li>';
 
                     } else { //si on est pas admin

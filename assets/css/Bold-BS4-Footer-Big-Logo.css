@@ -3,7 +3,7 @@
   background-color:#3c3d41;
   color:white;
   padding-top:0px;
-  margin: 0px;
+  margin-bottom: 0px;
   width: 100%;
 }
 
@@ -43,7 +43,9 @@
 
 #myFooter a:hover, #myFooter a:focus {
   text-decoration:none;
-  color:white;
+  color: #117a8b;
+  transition:0.2s;
+
 }
 
 #myFooter .social-networks {

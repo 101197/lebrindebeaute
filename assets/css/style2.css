@@ -10,7 +10,7 @@ body {
   margin-left: 9%;
   margin-top: -18%;
 }
-
+/*
 .map {
   margin-left: 16%;
   margin-top: 0%;
@@ -33,7 +33,7 @@ body {
 
 .adresse {
   margin-left: 20%;
-}
+} */
 
 .bandeprincipale {
   margin-right: 0%;
@@ -65,4 +65,35 @@ body {
 
 .pseudoprofil {
   margin-top: 0%;
+}
+
+#myFooter iframe {
+  width: 50%;
+  height: 255px;
+  border: 0;
+  margin-top: -7%;
+}
+
+#myFooter .ensemblefooter {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-width: 75%;
+  padding: 8%;
+  margin-bottom: 0%;
+}
+
+#myFooter .socialfooter {
+  font-size:27px;
+  color:#f9f9f9;
+  transition:0.2s;
+  margin-left: 55%;
+  margin-top: -21%;
+}
+
+#myFooter .socialfooter:hover {
+  color: #117a8b;
+}
+
+#myFooter li {
+  margin-bottom: 1%;
 }

@@ -18,3 +18,5 @@ faire un onglet d'administration
       ->Liste des produits
         ->Modifier et ajouter des produits
         (-> Mettre bouton pour directement modifier page produits)
+
+changer la couleur du formulaire inscription et connexion pour la meme couleur que la nav et le footer

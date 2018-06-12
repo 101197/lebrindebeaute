@@ -1,5 +1,5 @@
 <div class="table-responsive">
-    <table class="table">
+    <table class="table" style="text-align:center">
         <thead>
             <tr>
                 <th>Nom</th>

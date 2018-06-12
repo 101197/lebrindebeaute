@@ -1,5 +1,5 @@
 <div class="table-responsive">
-    <table class="table">
+    <table class="table" style="text-align:center">
         <thead>
             <tr>
                 <th>Nom</th>
@@ -18,7 +18,7 @@
               echo "<td>".$row['Prenom']."</td>";
               echo "<td>".$row['Mail']."</td>";
               echo "<td>".$row['Telephone']."</td>";
-              echo '<td><button class="btn btn-primary form-btn" onclick="document.location.href = \'modifierclient.php?IDClient='.$row["IDClient"].'\'">Modfier</button></td>'; 
+              echo '<td><button class="btn btn-primary form-btn" onclick="document.location.href = \'modifierclient.php?IDClient='.$row["IDClient"].'\'">Modfier</button></td>';
               echo "</tr>";
             }
             ?>

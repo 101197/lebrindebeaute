@@ -14,13 +14,13 @@
           $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
           $mdpconnect = sha1($_POST['mdpconnect']);
           if(!empty($pseudoconnect) AND !empty($mdpconnect)) {
-            $requser = $bdd->prepare("SELECT client.IDClient, client.Pseudo FROM client WHERE Pseudo = ? AND Mdp = ?");
+            $requser = $bdd->prepare("SELECT admin.IDAdmin, admin.PseudoAdmin FROM admin WHERE PseudoAdmin = ? AND MdpAdmin = ?");
             $requser->execute(array($pseudoconnect, $mdpconnect));
             $userexist = $requser->rowCount();
             if($userexist == 1) {
               $userinfo = $requser->fetch();
-              $_SESSION['id'] = $userinfo['IDClient'];
-              $_SESSION['pseudo'] = $userinfo['Pseudo'];
+              $_SESSION['id'] = $userinfo['IDAdmin'];
+              $_SESSION['pseudo'] = $userinfo['PseudoAdmin'];
               ?>
               <meta http-equiv="refresh" content="0;./accueil" />
               <?php

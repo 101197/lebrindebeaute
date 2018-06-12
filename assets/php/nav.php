@@ -28,13 +28,9 @@
 
                   <?php
                   if (isset($_SESSION['id'])) { //si on est connecté
-                    if ($unclient->getStatutClient() == 1) { // si on est admin
-                      $adminoption = '<li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a></li>';
-
-                    } else { //si on est pas admin
-                      $adminoption = ' ';
-                    } //fin option admin
                     echo '
+                      <li class="nav-item" role="presentation"><a class="nav-link active" href="./administration" style="color:#ffffff;"><i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;Administration</a>
+                      </li>
                       <li class="nav-item" role="presentation">
                         <a class="nav-link active" href="./profil" style="color:#ffffff;"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Mon profil</a>
                       </li>

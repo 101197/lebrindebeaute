@@ -7,3 +7,6 @@
 <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/style2.css">
+
+
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />

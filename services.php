@@ -14,44 +14,33 @@
 
           <div class="epilation">
             <div class="femme">
-
             </div>
             <div class="forfait">
-
             </div>
             <div class="homme">
-
             </div>
-
           </div>
+
           <div class="autresoins">
-
           </div>
+
           <div class="uva">
-
           </div>
+
           <div class="soinvisage">
-
             <div class="soinguinot">
-
             </div>
             <div class="sointhalgo">
-
             </div>
             <div class="soinantiagemarin">
-
             </div>
-
           </div>
+
           <div class="soincorps">
-
             <div class="modelage">
-
             </div>
             <div class="minceur">
-
             </div>
-
           </div>
 
 

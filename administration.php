@@ -9,7 +9,12 @@
 </head>
 
 <body>
-  <?php include 'assets/php/nav.php'; ?>
+  <?php
+  include 'assets/php/nav.php';
+
+  if (isset($_SESSION['id'])) {
+    ?>
+
 
     <div class="card">
         <div class="card-header">
@@ -42,7 +47,11 @@
     </div>
     </div>
     </div>
-    <?php include 'assets/php/footer.php'; ?>
+    <?php
+  }else {
+    $erreur = "Vous n'avez pas les autorisations pour acceder à cette page.";
+  }
+    include 'assets/php/footer.php'; ?>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

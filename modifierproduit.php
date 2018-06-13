@@ -8,7 +8,7 @@
   <body>
     <?php
     //verification droit d'acces
-    if (isset($_SESSION['id']) && $_SESSION['pseudo'] == 'Admin') {
+    if (isset($_SESSION['id']) ) {
       //test si la propriétée id est presente
       if (isset($_GET['id'])) {
         //test si il y a un id set

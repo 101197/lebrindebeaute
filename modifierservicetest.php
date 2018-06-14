@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Modifier un service</title>
-    <?php include 'assets/php/allcss.php'; ?>
+    <link rel="stylesheet" href="allcss.php">
   </head>
   <body>
     <?php
-    include 'assets/php/nav.php';
-
     //verification droit d'acces
     if (isset($_SESSION['id'])) {
       //test si la propriétée id est presente
@@ -103,14 +101,14 @@
             </div>
           </div>
             <div class="container mt-3 text-center">
-              <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+              <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel">Annuler</button>
               <?php
               if(isset($erreur)) {
                 echo '<font color="red">'.$erreur."</font>";
               } ?>
               <input type="text" name="idservice" value="<?php if(isset($_GET['id'])) {
                 echo $_GET['id'];} ?>">
-              <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fas fa-check-circle"></i>&nbsp;Valider</button>
+              <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme">Valider</button>
             </div>
 
             <!-- Modal de confirmation -->
@@ -123,8 +121,8 @@
                   </div>
                   <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
                   <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
-                    <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fas fa-check-circle"></i>&nbsp;Valider</button>
+                    <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Annuler</button>
+                    <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone">Valider</button>
                   </div>
                 </div>
               </div>
@@ -135,23 +133,23 @@
   }else {
     ?>
     <div class="container mt-3 text-center">
-      <font color="red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Erreur: aucun service selectionné<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></font><br>
-      <button type="button" class="btn btn-primary form-btn" onclick="document.location.replace('administration.php')"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>&nbsp;Retour</button>
+      <font color="red">Erreur: aucun service selectionné</font>
+      <button type="button" class="btn btn-danger btn-lg" onclick="document.location.replace('administration.php')">Retour</button>
     </div>
     <?php
   }
 }else {
   ?>
   <div class="container mt-3 text-center">
-    <font color="red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Erreur : propriété id introuvable<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></font><br>
-    <button type="button" class="btn btn-primary form-btn" onclick="document.location.replace('administration.php')"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>&nbsp;Retour</button>
+    <font color="red">Erreur : propriété id introuvable</font>
+    <button type="button" class="btn btn-danger btn-lg" onclick="document.location.replace('administration.php')">Retour</button>
   </div>
   <?php
 };
 }else {
   ?>
   <div class="container mt-3 text-center">
-    <font color="red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Vous n'avez pas les droits pour acceder à cette page<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></font>
+    <font color="red">Vous n'avez pas les droits pour acceder à cette page</font>
   </div>
   <?php
 }

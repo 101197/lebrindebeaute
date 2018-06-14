@@ -12,9 +12,9 @@
     //verification droit d'acces
     if (isset($_SESSION['id'])) {
       //test si la propriétée id est presente
-      if (isset($_GET['id'])) {
+      if (isset($_GET['IDService'])) {
         //test si il y a un id set
-        if (!empty($_GET['id'])) {
+        if (!empty($_GET['IDService'])) {
           //si le bouton valider est cliqué
           if (isset($_POST['formmodifierservice'])) {
 
@@ -37,13 +37,11 @@
             }else {
               $erreur = "Tous les champs avec * doivent être complétés.";
             }
-          }else {
-            echo "l17";
           }
 
           //charge les informations actuelles du produit
           $reqservice = $bdd->prepare("SELECT * FROM service WHERE IDService = ?");
-          $reqservice->execute(array($_GET['id']));
+          $reqservice->execute(array($_GET['IDService']));
           $dbrep = $reqservice->fetch();
 
           //le resultat remplit les variables
@@ -63,19 +61,20 @@
             <div class="row">
               <div class="col-sm-5">
                 <div class="form-inline m-2">
-                  <label class="mr-1">Nom :</label>
+                  <label class="mr-1">Nom :&nbsp;</label>
                   <input type="text" name="nomservice" value="<?php echo $nomservice ?>" class="form-control" id="nomservice">
                 </div>
               </div>
               <div class="col-sm-5">
                 <div class="form-inline m-2">
-                  <label class="mr-1">Prix :</label>
+                  <label class="mr-1">Prix :&nbsp;
                   <input type="text" name="prix" value="<?php echo $prix ?>" class="form-control" id="prixservice">
+                  €</label>
                 </div>
               </div>
               <div class="col-sm-5">
                 <div class="form-inline m-2">
-                  <label class="mr-1">Type :</label>
+                  <label class="mr-1">Type :&nbsp;</label>
                   <select class="form-control" name="type" id="typeservice">
                     <?php
                     //charge les categories
@@ -96,21 +95,22 @@
             </div>
               <div class="col-sm-5">
                 <div class="form-inline m-2">
-                  <label class="mr-1">Description :</label>
+                  <label class="mr-1">Description :&nbsp;</label>
                   <textarea name="description" rows="5" class="form-control" id="descriptionservice"><?php echo $description ?></textarea>
                 </div>
               </div>
             </div>
           </div>
             <div class="container mt-3 text-center">
-              <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+              <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
               <?php
               if(isset($erreur)) {
                 echo '<font color="red">'.$erreur."</font>";
               } ?>
-              <input type="text" name="idservice" value="<?php if(isset($_GET['id'])) {
-                echo $_GET['id'];} ?>">
-              <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fas fa-check-circle"></i>&nbsp;Valider</button>
+              <!-- <input type="text" name="idservice" value="<?php if(isset($_GET['id'])) {
+                echo $_GET['id'];} ?>"> -->
+              <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>
+&nbsp;Valider</button>
             </div>
 
             <!-- Modal de confirmation -->
@@ -124,7 +124,8 @@
                   <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
                   <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
-                    <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fas fa-check-circle"></i>&nbsp;Valider</button>
+                    <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>
+&nbsp;Valider</button>
                   </div>
                 </div>
               </div>

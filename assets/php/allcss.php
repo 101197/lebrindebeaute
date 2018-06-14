@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="assets/css/-Login-form-Page-BS4-.css">
 <link rel="stylesheet" href="assets/css/Bold-BS4-Footer-Big-Logo.css">
 <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+<link rel="stylesheet" href="assets/css/Pretty-Registration-Form.css">
+
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/style2.css">
 

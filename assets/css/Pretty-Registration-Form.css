@@ -1,12 +1,16 @@
 .register-form form.custom-form {
   padding:55px;
   box-sizing:border-box;
-  background-color:#ffffff;
-  box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  /* background-color:#ffffff;
+  box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1); */
   font:bold 14px sans-serif;
   text-align:center;
   margin:50px;
   color:#333;
+  margin-top: 0%;
+  min-width: 130%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width:400px) {
@@ -87,4 +91,3 @@
   margin:30px;
   outline:none;
 }
-

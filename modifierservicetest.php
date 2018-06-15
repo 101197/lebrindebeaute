@@ -12,9 +12,9 @@
     //verification droit d'acces
     if (isset($_SESSION['id'])) {
       //test si la propriétée id est presente
-      if (isset($_GET['IDService'])) {
+      if (isset($_GET['idservice'])) {
         //test si il y a un id set
-        if (!empty($_GET['IDService'])) {
+        if (!empty($_GET['idservice'])) {
           //si le bouton valider est cliqué
           if (isset($_POST['formmodifierservice'])) {
 
@@ -74,7 +74,10 @@
                             <label class="col-form-label">Prix :&nbsp;</label>
                           </div>
                           <div class="col-sm-6 input-column">
-                            <input type="text" name="prix" value="<?php echo $prix ?>€" class="form-control" id="prixservice">
+                            <input type="text" name="prix" value="<?php echo $prix ?>" class="form-control" id="prixservice">
+                          </div>
+                          <div class="label-column">
+                            <label class="col-form-label">€</label>
                           </div>
                       </div>
                       <div class="form-row form-group">
@@ -116,7 +119,7 @@
                           </div>
                           <div class="col-sm-6 input-column">
                               <div class="dropdown">
-                                <select class="form-control dropdown-toggle" name="type" data-toggle="dropdown" id="typeservice">
+                                <select class="form-control dropdown-toggle" name="type" data-toggle="dropdown" id="soustypeservice">
                                   <?php
                                   //charge les categories
                                   $reqsoustype = $bdd->prepare("SELECT * FROM soustype");
@@ -137,21 +140,6 @@
 
                       <div class="form-row form-group">
                           <div class="col-sm-4 label-column">
-                            <label class="col-form-label">Sous type</label>
-                          </div>
-                          <div class="col-sm-6 input-column">
-                              <div class="dropdown">
-                                <button class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button">Dropdown </button>
-                                <div class="dropdown-menu" role="menu">
-                                  <a class="dropdown-item" role="presentation" href="#">First Item</a>
-                                  <a class="dropdown-item" role="presentation" href="#">Second Item</a>
-                                  <a class="dropdown-item" role="presentation" href="#">Third Item</a>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="form-row form-group">
-                          <div class="col-sm-4 label-column">
                             <label class="mr-1">Description :&nbsp;</label>
                           </div>
                           <div class="col-sm-6 input-column">
@@ -159,21 +147,21 @@
                           </div>
                       </div>
 
-                      <div class="container mt-3 text-center">
-                        <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                      <div class="container text-center btn-modif">
+                        <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
                         <?php
                         if(isset($erreur)) {
                           echo '<font color="red">'.$erreur."</font>";
                         } ?>
-                        <!-- <input type="text" name="idservice" value="<?php if(isset($_GET['id'])) {
-                          echo $_GET['id'];} ?>"> -->
-                        <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>
-          &nbsp;Valider</button>
+                        <input type="text" name="idservice" value="<?php if(isset($_GET['idservice'])) {
+                          echo $_GET['idservice'];} ?>">
+                        <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
+                        <!-- <button type="submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button> -->
                       </div>
                       <!-- <button class="btn btn-light submit-button" type="button">Modifier</button> -->
 
                       <!-- Modal de confirmation -->
-                      <div class="modal fade" id="serviceconfirme">
+                      <!-- <div class="modal fade" id="serviceconfirme">
                         <div class="modal-dialog modal-lg">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -181,13 +169,13 @@
                               <button type="button" class="close" data-dismiss="modal">&time;</button>
                             </div>
                             <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
-                            <div class="modal-footer justify-content-between">
+                            <!--<div class="modal-footer justify-content-between">
                               <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
                               <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
 
                     </form>
@@ -222,6 +210,9 @@
   </div>
   <?php
 }
+
+include 'assets/php/footer.php';
+
 ?>
 
   </body>

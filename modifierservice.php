@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Modifier un service</title>
+    <title>Modifier service</title>
     <?php include 'assets/php/allcss.php'; ?>
   </head>
   <body>
@@ -53,85 +53,139 @@
           $soustype = $dbrep["SousType"];
     ?>
 
-    <div class="container">
-      <h1>Modifier un service</h1>
-      <form class="" method="post">
-        <div class="row bg-light rounded">
-          <div class="col">
-            <div class="row">
-              <div class="col-sm-5">
-                <div class="form-inline m-2">
-                  <label class="mr-1">Nom :&nbsp;</label>
-                  <input type="text" name="nomservice" value="<?php echo $nomservice ?>" class="form-control" id="nomservice">
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <div class="form-inline m-2">
-                  <label class="mr-1">Prix :&nbsp;
-                  <input type="text" name="prix" value="<?php echo $prix ?>" class="form-control" id="prixservice">
-                  €</label>
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <div class="form-inline m-2">
-                  <label class="mr-1">Type :&nbsp;</label>
-                  <select class="form-control" name="type" id="typeservice">
-                    <?php
-                    //charge les categories
-                    $reqtype = $bdd->prepare("SELECT * FROM type");
-                    $reqtype->execute();
-                    $typeinfo = $reqtype->fetchAll();
-                    foreach ($typeinfo as $row) {
-                      if ($row["IDType"] == $type) {
-                        echo '<option value="'.$row["IDType"].'" selected="selected">'.$row["LibelleType"].'</option>';
-                      }else {
-                        echo '<option value="'.$row["IDType"].'">'.$row["LibelleType"].'</option>';
-                      }
-                    }
-                    ?>
-                  </select>
-                </div>
-              </div>
-            </div>
-              <div class="col-sm-5">
-                <div class="form-inline m-2">
-                  <label class="mr-1">Description :&nbsp;</label>
-                  <textarea name="description" rows="5" class="form-control" id="descriptionservice"><?php echo $description ?></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="container mt-3 text-center">
-              <button type="button" class="btn btn-danger float-left btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
-              <?php
-              if(isset($erreur)) {
-                echo '<font color="red">'.$erreur."</font>";
-              } ?>
-              <!-- <input type="text" name="idservice" value="<?php if(isset($_GET['id'])) {
-                echo $_GET['id'];} ?>"> -->
-              <button type="button" class="btn btn-success float-right btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>
-&nbsp;Valider</button>
-            </div>
+    <div class="container-fluid">
+      <div class="bandeprincipale row mh-100vh">
+        <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
-            <!-- Modal de confirmation -->
-            <div class="modal fade" id="serviceconfirme">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Modifier le service</h4>
-                    <button type="button" class="close" data-dismiss="modal">&time;</button>
-                  </div>
-                  <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
-                  <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
-                    <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>
-&nbsp;Valider</button>
-                  </div>
-                </div>
+          <div class="row register-form">
+              <div class="col-md-8 offset-md-2">
+                  <form class="custom-form">
+                      <h1>Modifier un service</h1>
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="col-form-label">Nom :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                            <input type="text" name="nomservice" value="<?php echo $nomservice ?>" class="form-control" id="nomservice">
+                          </div>
+                      </div>
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="col-form-label">Prix :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                            <input type="text" name="prix" value="<?php echo $prix ?>" class="form-control" id="prixservice">
+                          </div>
+                          <div class="label-column">
+                            <label class="col-form-label">€</label>
+                          </div>
+                      </div>
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="col-form-label">Temps :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                            <input type="text" name="temps" value="<?php echo $temps ?>" class="form-control" id="tempsservice">
+                          </div>
+                      </div>
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="mr-1">Type :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                              <div class="dropdown">
+                                <select class="form-control dropdown-toggle" name="type" data-toggle="dropdown" id="typeservice">
+                                  <?php
+                                  //charge les categories
+                                  $reqtype = $bdd->prepare("SELECT * FROM type");
+                                  $reqtype->execute();
+                                  $typeinfo = $reqtype->fetchAll();
+                                  foreach ($typeinfo as $row) {
+                                    if ($row["IDType"] == $type) {
+                                      echo '<option value="'.$row["IDType"].'" selected="selected">'.$row["LibelleType"].'</option>';
+                                    }else {
+                                      echo '<option value="'.$row["IDType"].'">'.$row["LibelleType"].'</option>';
+                                    }
+                                  }
+                                  ?>
+                                </select>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="mr-1">Sous-type :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                              <div class="dropdown">
+                                <select class="form-control dropdown-toggle" name="type" data-toggle="dropdown" id="soustypeservice">
+                                  <?php
+                                  //charge les categories
+                                  $reqsoustype = $bdd->prepare("SELECT * FROM soustype");
+                                  $reqsoustype->execute();
+                                  $soustypeinfo = $reqsoustype->fetchAll();
+                                  foreach ($soustypeinfo as $row) {
+                                    if ($row["IDSousType"] == $soustype) {
+                                      echo '<option value="'.$row["IDSousType"].'" selected="selected">'.$row["LibelleSousType"].'</option>';
+                                    }else {
+                                      echo '<option value="'.$row["IDSousType"].'">'.$row["LibelleSousType"].'</option>';
+                                    }
+                                  }
+                                  ?>
+                                </select>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="form-row form-group">
+                          <div class="col-sm-4 label-column">
+                            <label class="mr-1">Description :&nbsp;</label>
+                          </div>
+                          <div class="col-sm-6 input-column">
+                            <textarea name="description" rows="5" class="form-control" id="descriptionservice"><?php echo $description ?></textarea>
+                          </div>
+                      </div>
+
+                      <div class="container text-center btn-modif">
+                        <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                        <?php
+                        if(isset($erreur)) {
+                          echo '<font color="red">'.$erreur."</font>";
+                        } ?>
+                        <input type="text" name="idservice" value="<?php if(isset($_GET['IDService'])) {
+                          echo $_GET['IDService'];} ?>">
+                        <!-- <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button> -->
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
+                      </div>
+                      <!-- <button class="btn btn-light submit-button" type="button">Modifier</button> -->
+
+                      <!-- Modal de confirmation -->
+                      <div class="modal fade" id="serviceconfirme">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modifier le service</h4>
+                              <button type="button" class="close" data-dismiss="modal">&time;</button>
+                            </div>
+                            <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
+                            <div class="modal-footer justify-content-between">
+                              <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                              <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </form>
               </div>
-            </div>
-      </form>
+          </div>
+
+        </div>
+      </div>
     </div>
+
     <?php
   }else {
     ?>
@@ -156,6 +210,10 @@
   </div>
   <?php
 }
+
+include 'assets/php/footer.php';
+
 ?>
+
   </body>
 </html>

@@ -5,10 +5,10 @@
 
     <div class="socialfooter">
       <ul>
-        <li><a><i class="fa fa-map-marker">&nbsp;Place&nbsp;de&nbsp;la&nbsp;Rébuplique&nbsp;-&nbsp;66270&nbsp;Le&nbsp;Soler</i></a></li>
-        <li><a><i class="fa fa-phone">&nbsp;04&nbsp;68&nbsp;92&nbsp;52&nbsp;05</i></a></li>
-        <li><a><i class="fa fa-envelope">&nbsp;brindebeautelesoler@gmail.com</i></a></li>
-        <li role="presentation"><a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true">&nbsp;Le&nbsp;Brin&nbsp;de&nbsp;Beauté</i></a></li>
+        <li><a><i class="fa fa-map-marker">&nbsp;&nbsp;Place&nbsp;de&nbsp;la&nbsp;Rébuplique&nbsp;-&nbsp;66270&nbsp;Le&nbsp;Soler</i></a></li>
+        <li><a><i class="fa fa-phone">&nbsp;&nbsp;04&nbsp;68&nbsp;92&nbsp;52&nbsp;05</i></a></li>
+        <li><a><i class="fa fa-envelope">&nbsp;&nbsp;brindebeautelesoler@gmail.com</i></a></li>
+        <li role="presentation"><a href="https://www.facebook.com/Le-Brin-de-Beaut%C3%A9-417084685132921/" class="facebook"><i class="fa fa-facebook-official" aria-hidden="true">&nbsp;&nbsp;Le&nbsp;Brin&nbsp;de&nbsp;Beauté</i></a></li>
       </ul>
     </div>
 

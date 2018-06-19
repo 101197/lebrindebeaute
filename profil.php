@@ -9,7 +9,7 @@
     <?php include 'assets/php/nav.php'; ?>
 
     <div class="container-fluid">
-      <div class="bandeprincipale row mh-100vh">
+      <div class="bandeprincipale row">
         <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
           <div class="designprofil">
@@ -31,10 +31,6 @@
             </ul>
             <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierprofil'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
           </div>
-
-<?php echo $unclient->getNomClient(); ?>
-
-
         </div>
       </div>
     </div>

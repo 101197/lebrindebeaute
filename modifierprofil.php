@@ -9,13 +9,13 @@
     <?php include 'assets/php/nav.php'; ?>
 
     <div class="container-fluid">
-      <div class="bandeprincipale row mh-100vh">
+      <div class="bandeprincipale row">
         <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
         </div>
       </div>
     </div>
-    
+
     <?php include 'assets/php/footer.php'; ?>
   </body>
 </html>

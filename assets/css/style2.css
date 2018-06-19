@@ -14,7 +14,7 @@ body {
 .bandeprincipale {
   margin-right: 0%;
   margin-left: 0%;
-  min-height: 110vh;
+  min-height: 110vw;
 }
 
 .card {
@@ -53,14 +53,14 @@ body {
 #myFooter .ensemblefooter {
   margin-left: 50%;
   transform: translateX(-50%);
-  min-width: 75%;
+  min-width: 80%;
   padding: 8%;
   margin-bottom: 0%;
   margin-top: 2%;
 }
 
 #myFooter .socialfooter {
-  font-size:27px;
+  font-size:1.5vw;
   color:#f9f9f9;
   transition:0.2s;
   margin-left: 55%;
@@ -79,15 +79,49 @@ body {
   margin-top: 5%;
 }
 
+/* ACCUEIL */
 .ensembleaccueil {
   margin-top: 3%;
 }
 
-.imgvitrine {
+.ensembleaccueil img {
   width: 48%;
+  border-radius: 50%;
+  padding: 1%;
+  border: 1px;
+  box-shadow: 0px 0px 10px #BBB;
 }
 
 .textvitrine {
   margin-left: 53%;
+  margin-top: -23%;
+}
+
+.part2accueil {
+  margin-top: 23%;
+  text-align: right;
+}
+
+.textinterieur {
+  margin-right: 53%;
+  margin-top: -23%;
+}
+
+.part3accueil {
+  margin-top: 23%;
+}
+
+.textcabine1 {
+  margin-left: 53%;
+  margin-top: -23%;
+}
+
+.part4accueil {
+  margin-top: 23%;
+  text-align: right;
+}
+
+.textcabine2 {
+  margin-right: 53%;
   margin-top: -23%;
 }

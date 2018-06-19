@@ -13,14 +13,27 @@
       <div class="bandeprincipale row mh-100vh">
         <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
-          <h6 style="text-align: center; font-family: 'Tangerine', cursive; font-size: 500%;">Le Brin de Beauté</h6>
+          <h6 style="text-align: center; font-family: 'Tangerine', cursive; font-size: 6vw;">Le Brin de Beauté</h6>
 
           <div class="ensembleaccueil">
+
             <div class="part1accueil">
               <img src="assets/img/vitrine.jpg" alt="vitrine" class="imgvitrine">
               <p class="textvitrine">ouiouioui</p>
-
             </div>
+            <div class="part2accueil">
+              <img src="assets/img/interieur.jpg" alt="interieur" class="imginterieur">
+              <p class="textinterieur">nopenopenope</p>
+            </div>
+            <div class="part3accueil">
+              <img src="assets/img/cabine1.jpg" alt="cabine1" class="imgcabine1">
+              <p class="textcabine1">yepyepyep</p>
+            </div>
+            <div class="part4accueil">
+              <img src="assets/img/cabine2.jpg" alt="cabine2" class="imgcabine2">
+              <p class="textcabine2">nonono</p>
+            </div>
+
           </div>
 
 

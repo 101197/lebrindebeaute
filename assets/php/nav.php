@@ -22,7 +22,7 @@
               </button>
               <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item" role="presentation"><a class="nav-link active" href="./accueil" style="color:#ffffff;"><i class="fa fa-home"></i>&nbsp;Accueil</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="./index" style="color:#ffffff;"><i class="fa fa-home"></i>&nbsp;Accueil</a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link active" href="./catalogue" style="color:#ffffff;"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp;Produits</a></li>
                   <li class="nav-item" role="presentation"><a class="nav-link active" href="./services" style="color:#ffffff;"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>&nbsp;Services</a></li>
 

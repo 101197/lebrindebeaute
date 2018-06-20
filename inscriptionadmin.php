@@ -36,7 +36,7 @@
                       if($mdp == $mdp2) {
                         $insertmbr = $bdd->prepare("INSERT INTO admin(PseudoAdmin, MailAdmin, MdpAdmin, NomAdmin, PrenomAdmin, TelephoneAdmin) VALUES(?, ?, ?, ?, ?, ?)");
                         $insertmbr->execute(array($pseudo, $mail, $mdp, $nom, $prenom, $telephone));
-                        $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/accueil.php\"><br />Revenir sur la page d'accueil<br /></a><a href=\"/connexion.php\"><br />Se connecter!</a>";
+                        $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/index.php\"><br />Revenir sur la page d'accueil<br /></a><a href=\"/connexion.php\"><br />Se connecter!</a>";
                       } else {
                         $erreur = "Vos mots de passe ne correspondent pas!";
                       }
@@ -116,9 +116,6 @@
                 }
               ?>
 
-              <div class="mdpoublie">
-                <p class="mt-3 mb-0"><a href="./connexion" class="text-info small">Déjà incrit? Connectez-vous!</a></p>
-              </div>
 
             </div>
           </div>

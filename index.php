@@ -19,19 +19,19 @@
 
             <div class="part1accueil">
               <img src="assets/img/vitrine.jpg" alt="vitrine" class="imgvitrine">
-              <p class="textvitrine">ouiouioui</p>
+              <p class="textvitrine">présentation</p>
             </div>
             <div class="part2accueil">
               <img src="assets/img/interieur.jpg" alt="interieur" class="imginterieur">
-              <p class="textinterieur">nopenopenope</p>
+              <p class="textinterieur">horaires</p>
             </div>
             <div class="part3accueil">
               <img src="assets/img/cabine1.jpg" alt="cabine1" class="imgcabine1">
-              <p class="textcabine1">yepyepyep</p>
+              <p class="textcabine1">retrouvez nos prestations de services ici</p>
             </div>
             <div class="part4accueil">
               <img src="assets/img/cabine2.jpg" alt="cabine2" class="imgcabine2">
-              <p class="textcabine2">nonono</p>
+              <p class="textcabine2">Vous pouvez trouver un appercu des produit disponible ici</p>
             </div>
 
           </div>

@@ -26,7 +26,7 @@
                     if($mailexist == 0) {
                         $insertmbr = $bdd->prepare("INSERT INTO client(Mail, Nom, Prenom, Telephone) VALUES(?, ?, ?, ?)");
                         $insertmbr->execute(array($mail, $nom, $prenom, $telephone));
-                        $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/accueil.php\"><br />Revenir sur la page d'accueil<br /></a>";
+                        $erreur = "<br> Votre compte a bien été créé !<br><a href=\"/index.php\"><br />Revenir sur la page d'accueil<br /></a>";
                     } else {
                       $erreur = "L'adresse mail est déjà utilisée!";
                     }

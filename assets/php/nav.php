@@ -13,8 +13,7 @@
         <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#3c3d41;color:#ffffff;">
             <div class="container-fluid">
               <a class="navbar-brand" href="/accueil">
-                <i class="fa fa-certificate" aria-hidden="true"></i>
-                <div class="navbrand fa"><b>Le Brin de Beauté</b></div>
+                <div class="navbrand fa"><p><b>Le Brin de Beauté</b></p></div>
               </a>
               <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
                 <span class="sr-only">Toggle navigation</span>

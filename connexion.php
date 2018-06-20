@@ -22,7 +22,7 @@
               $_SESSION['id'] = $userinfo['IDAdmin'];
               $_SESSION['pseudo'] = $userinfo['PseudoAdmin'];
               ?>
-              <meta http-equiv="refresh" content="0;./accueil" />
+              <meta http-equiv="refresh" content="0;./index" />
               <?php
             } else {
               $erreur = "<br>Mauvais pseudo ou mauvais mot de passe !";

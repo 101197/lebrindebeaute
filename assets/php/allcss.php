@@ -10,5 +10,6 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/style2.css">
 
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />

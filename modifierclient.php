@@ -105,16 +105,6 @@
             </div>
           </div>
 
-          <!-- FORMULAIRE EXEMPLE -->
-          <form method="post">
-            <input type="text" name="nomclient" value="<?php echo $dbrep["Nom"]; ?>">
-            <input type="text" name="prenomclient" value="<?php echo $dbrep["Prenom"]; ?>">
-            <input type="text" name="mailclient" value="<?php echo $dbrep["Mail"]; ?>">
-            <input type="text" name="telephoneclient" value="<?php echo $dbrep["Telephone"]; ?>">
-            <div>
-              <button type="submit" name="formodifierclient" class="btn btn-success btn-lg float-right">Modifier</button>
-            </div>
-          </form>
           <!-- FIN DU FORMULAIRE -->
 
           <?php

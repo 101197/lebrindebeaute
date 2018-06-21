@@ -12,9 +12,9 @@
     //verification droit d'acces
     if (isset($_SESSION['id'])) {
       //test si la propriétée id est presente
-      if (isset($_GET['idservice'])) {
+      if (isset($_GET['IDService'])) {
         //test si il y a un id set
-        if (!empty($_GET['idservice'])) {
+        if (!empty($_GET['IDService'])) {
           //si le bouton valider est cliqué
           if (isset($_POST['formmodifierservice'])) {
 
@@ -54,7 +54,7 @@
     ?>
 
     <div class="container-fluid">
-      <div class="bandeprincipale row mh-100vh">
+      <div class="bandeprincipale row">
         <div class="bg-white p-5 rounded my-4 my-lg-0" id="login-block">
 
           <div class="row register-form">
@@ -153,15 +153,15 @@
                         if(isset($erreur)) {
                           echo '<font color="red">'.$erreur."</font>";
                         } ?>
-                        <input type="text" name="idservice" value="<?php if(isset($_GET['idservice'])) {
-                          echo $_GET['idservice'];} ?>">
-                        <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
-                        <!-- <button type="submit" class="btn btn-success btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button> -->
+                        <input type="text" name="idservice" value="<?php if(isset($_GET['IDService'])) {
+                          echo $_GET['IDService'];} ?>">
+                        <!-- <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button> -->
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#serviceconfirme"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
                       </div>
                       <!-- <button class="btn btn-light submit-button" type="button">Modifier</button> -->
 
                       <!-- Modal de confirmation -->
-                      <!-- <div class="modal fade" id="serviceconfirme">
+                      <div class="modal fade" id="serviceconfirme">
                         <div class="modal-dialog modal-lg">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -169,13 +169,13 @@
                               <button type="button" class="close" data-dismiss="modal">&time;</button>
                             </div>
                             <div class="modal-body" id="modalbody"></div> <!-- heu wtf cette ligne? -->
-                            <!--<div class="modal-footer justify-content-between">
+                            <div class="modal-footer justify-content-between">
                               <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
                               <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg float-right" id="btndone"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Valider</button>
                             </div>
                           </div>
                         </div>
-                      </div> -->
+                      </div>
 
 
                     </form>

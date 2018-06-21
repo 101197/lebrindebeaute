@@ -27,19 +27,26 @@
         <div class="card-body">
             <div id="nav-tabContent" class="tab-content">
                 <div id="item-1-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="item-1-1-tab">
-                  <h4>Mes clients</h4><br>
+                  <h4>Mes clients
+                    <button class="btn btn-info mt-2 float-right" onclick="document.location.href='inscriptionadmin.php'">Nouvel administrateur</button>
+                  </h4>
+                  <br>
                   <?php include 'assets/php/tabclients.php'; ?>
 
                   <!--<button class="btn btn-primary" type="button">Button</button>-->
                 </div>
                 <div id="item-1-2" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-2-tab">
-                  <h4>Mes services</h4>
+                  <h4>Mes services
+                    <button class="btn btn-info mt-2 float-right" onclick="document.location.href='ajoutservice.php'">Nouveau service</button>
+                  </h4>
                   <?php include 'assets/php/tabservices.php'; ?>
 
                     <!--<button class="btn btn-primary" type="button">Button</button>-->
                 </div>
                 <div id="item-1-3" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-3-tab">
-                  <h4>Mes produits</h4>
+                  <h4>Mes produits
+                    <button class="btn btn-info mt-2 float-right" onclick="document.location.href='ajoutproduit.php'">Nouveau produit</button>
+                </h4>
                   <?php include 'assets/php/tabproduits.php'; ?>
 
                 <!--<button class="btn btn-primary" type="button">Button</button>-->

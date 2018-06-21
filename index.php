@@ -36,7 +36,7 @@
             <div class="part4accueil">
               <img src="assets/img/cabine2.jpg" alt="cabine2" class="imgcabine2">
               <p class="textcabine2"><i class="fa fa-letter" aria-hidden="true"></i><b>Newsletter</b> <br><br> Pour profiter des offres promotionnelles vous pouvez <br> vous inscrire sur la newsletter, pour cela: <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue.php'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;CLIQUEZ ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='inscription.php'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;CLIQUEZ ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>
 

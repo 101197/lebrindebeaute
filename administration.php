@@ -46,7 +46,8 @@
                 <div id="item-1-3" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-3-tab">
                   <h4>Mes produits
                     <button class="btn btn-info mt-2 float-right" onclick="document.location.href='ajoutproduit.php'">Nouveau produit</button>
-                </h4>
+                  </h4>
+                  <br>
                   <?php include 'assets/php/tabproduits.php'; ?>
 
                 <!--<button class="btn btn-primary" type="button">Button</button>-->

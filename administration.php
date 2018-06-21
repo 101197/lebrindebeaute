@@ -49,7 +49,7 @@
     </div>
     <?php
   }else {
-    $erreur = "Vous n'avez pas les autorisations pour acceder à cette page.";
+    echo "Vous n'avez pas les droits pour acceder à cette page.";
   }
     include 'assets/php/footer.php'; ?>
 

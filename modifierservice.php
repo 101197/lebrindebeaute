@@ -36,7 +36,7 @@
               $reqservice->execute(array($nomservice, $description, $prix, $type, $soustype, $temps, $idservice));
 
             } else {
-              echo "Tous les champs doivent être complétés";
+              echo "Tous les champs avec * doivent être complétés";
             }
           }
 
@@ -67,7 +67,7 @@
                       <h1>Modifier un service</h1>
                       <div class="form-row form-group">
                         <div class="col-sm-4 label-column">
-                          <label class="col-form-label">Nom :&nbsp;</label>
+                          <label class="col-form-label">* Nom :&nbsp;</label>
                         </div>
                         <div class="col-sm-6 input-column">
                           <input type="text" class="form-control" name="nomservice" value="<?php echo $dbrep['LibelleService']; ?>">
@@ -75,7 +75,7 @@
                       </div>
                       <div class="form-row form-group">
                         <div class="col-sm-4 label-column">
-                          <label class="col-form-label">Prix :&nbsp;</label>
+                          <label class="col-form-label">* Prix :&nbsp;</label>
                         </div>
                         <div class="col-sm-6 input-column">
                           <input type="text" class="form-control" name="prix" value="<?php echo $dbrep['PrixService']; ?>">
@@ -94,7 +94,7 @@
                       </div>
                       <div class="form-row form-group">
                         <div class="col-sm-4 label-column">
-                          <label class="col-form-label">Type :&nbsp;</label>
+                          <label class="col-form-label">* Type :&nbsp;</label>
                         </div>
                         <div class="col-sm-6 input-column">
                           <div class="dropdown">

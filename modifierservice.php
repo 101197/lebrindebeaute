@@ -100,7 +100,7 @@
                           <div class="dropdown">
                             <select class="form-control dropdown-toggle" name="type" data-toggle="dropdown" id="typeservice">
                               <?php
-                              //charge les categories
+                              //charge les types
                               $reqtype = $bdd->prepare("SELECT * FROM type");
                               $reqtype->execute();
                               $typeinfo = $reqtype->fetchAll();

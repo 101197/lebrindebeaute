@@ -81,7 +81,7 @@
                 <label class="text-secondary">* Sous-type</label>
                   <select class="form-control" name="soustype" data-toggle="dropdown">
                     <?php
-                    //charge les types
+                    //charge les soustypes
                     $reqsoustype = $bdd->prepare("SELECT * FROM soustype");
                     $reqsoustype->execute();
                     $soustypeinfo = $reqsoustype->fetchAll();

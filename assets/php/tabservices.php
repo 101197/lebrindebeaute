@@ -118,7 +118,7 @@
               <td> </td>
             </tr>
             <?php
-            $reqservice = $bdd->prepare("SELECT * FROM service WHERE Type = (SELECT IDType FROM type WHERE LibelleType = 'Soins du visage')");
+            $reqservice = $bdd->prepare("SELECT * FROM service WHERE Type = (SELECT IDType FROM type WHERE LibelleType = 'Autres soins')");
             $reqservice->execute();
             $dbrep = $reqservice->fetchAll();
             foreach ($dbrep as $row){

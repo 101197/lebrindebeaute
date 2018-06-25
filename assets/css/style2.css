@@ -89,15 +89,20 @@ body {
 /* ACCUEIL */
 .ensembleaccueil {
   margin-top: 3%;
-  min-height: 85vw;
+  min-height: 90vw;
 }
 
-.ensembleaccueil img {
+.imgvitrine, .imginterieur, .imgcabine1, .imgcabine2 {
   width: 48%;
   border-radius: 21%;
   padding: 1%;
   border: 1px;
   box-shadow: 0px 0px 10px #BBB;
+}
+
+.imgguinot, .imgthalgo {
+  width: 49%;
+  max-width: 400px;
 }
 
 .textvitrine {
@@ -107,7 +112,7 @@ body {
 }
 
 .part2accueil {
-  margin-top: 23%;
+  margin-top: 5%;
   text-align: right;
 }
 
@@ -128,7 +133,7 @@ body {
 }
 
 .part4accueil {
-  margin-top: 11%;
+  margin-top: 5%;
   text-align: right;
 }
 

@@ -19,7 +19,10 @@
 
             <div class="part1accueil">
               <img src="assets/img/vitrine.jpg" alt="vitrine" class="imgvitrine">
-              <p class="textvitrine">présentation</p>
+              <p class="textvitrine"><b>L'institut Le Brin de Beauté</b><br><br>Installée depuis X années au Soler, Florence<br>vous accueille dans son institut: Le Brin de Beauté.<br>En plus de vos épilations, venez découvrir les soins et<br>produits proposés en partenariat avec les marques <br><br>
+                <img src="assets/img/guinot-logo.png" alt="guinot" class="imgguinot">&nbsp;
+                <img src="assets/img/thalgo-logo.png" alt="thalgo" class="imgthalgo">
+              </p>
             </div>
             <div class="part2accueil">
               <img src="assets/img/interieur.jpg" alt="interieur" class="imginterieur">
@@ -28,15 +31,15 @@
             <div class="part3accueil">
               <img src="assets/img/cabine1.jpg" alt="cabine1" class="imgcabine1">
               <p class="textcabine1"><b>Mes prestations:</b> <br><br>Pour retrouver les informations concernant l'emsemble de mes prestations <br> tel que les épilations, les soins du corps ou du visage <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='services.php'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='services'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               <br><br><b>Chez vous:</b><br><br>Continuez ces soins bien-être chez vous!<br> Pour voir les produits disponibles <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue.php'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR LA&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR LA&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>
             <div class="part4accueil">
               <img src="assets/img/cabine2.jpg" alt="cabine2" class="imgcabine2">
               <p class="textcabine2"><i class="fa fa-letter" aria-hidden="true"></i><b>Newsletter</b> <br><br> Pour profiter des offres promotionnelles vous pouvez <br> vous inscrire sur la newsletter, pour cela: <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='inscription.php'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;CLIQUEZ ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='inscription'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;CLIQUEZ ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>
 

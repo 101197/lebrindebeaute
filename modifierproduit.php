@@ -31,11 +31,23 @@
 
               //le PDO
               $reqproduit = $bdd->prepare("UPDATE `produit` SET `LibelleProduit` = ?, `DescriptionProduit` = ?, `PrixProduit` = ?, `Categorie` = ? WHERE IDProduit = ?");
-              $reqproduit->execute(array($nomproduit, $description, $prix, $categorie, $idproduit));
+              $reqproduit->execute(array($idproduit));
 
             } else {
               echo "Tous les champs avec * doivent être complétés";
             }
+          }
+
+          if (isset($_POST['formsupproduit'])) {
+            //variables
+            $nomproduit = htmlspecialchars($_POST['nomproduit']);
+            $description = htmlspecialchars($_POST['description']);
+            $prix = floatval(htmlspecialchars($_POST['prix']));
+            $categorie = intval(htmlspecialchars($_POST['categorie']));
+
+            //le PDO
+            $reqproduit = $bdd->prepare("DELETE FROM `produit` WHERE IDProduit = ?");
+            $reqproduit->execute(array($nomproduit, $description, $prix, $categorie, $idproduit));
           }
 
           //charge les informations actuelles du produit
@@ -115,6 +127,8 @@
                       <div>
                         <button type="submit" name="formmodifierproduit" class="btn btn-success btn-lg"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Modifier</button>
                         <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                        <button type="submit" name="formsupproduit" class="btn btn-outline-danger btn-lg float-right" style="margin-right: 15%;"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;Supprimer</button>
+
                       </div>
                     </form>
 

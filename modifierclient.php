@@ -37,6 +37,19 @@
             }
           }
 
+          //si le bouton supprimer est cliqué
+          if (isset($_POST['formsupclient'])) {
+            //variables
+            $nomclient = htmlspecialchars($_POST['nomclient']);
+            $prenomclient = htmlspecialchars($_POST['prenomclient']);
+            $mailclient = htmlspecialchars($_POST['mailclient']);
+            $telephoneclient = intval(htmlspecialchars($_POST['telephoneclient']));
+
+            //le PDO
+            $reqclient = $bdd->prepare("DELETE FROM `client` WHERE IDClient = ?");
+            $reqclient->execute(array($idclient));
+          }
+
           //charge les information actuelles du client
           $reqclient = $bdd->prepare("SELECT * FROM client WHERE IDClient = ?");
           $reqclient->execute(array($_GET['IDClient']));
@@ -92,9 +105,11 @@
                           <input type="text" class="form-control" name="telephoneclient" value="<?php echo $dbrep["Telephone"]; ?>">
                         </div>
                       </div>
-                      <div>
+                      <div style="margin-top: 5%;">
                         <button type="submit" name="formodifierclient" class="btn btn-success btn-lg"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Modifier</button>
                         <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                        <button type="submit" name="formsupclient" class="btn btn-outline-danger btn-lg float-right" style="margin-right: 15%;"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;Supprimer</button>
+
                       </div>
                     </form>
 

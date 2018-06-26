@@ -40,6 +40,21 @@
             }
           }
 
+          //si le bouton supprimer est cliqué
+          if (isset($_POST['formsupservice'])) {
+            //variables
+            $nomservice = htmlspecialchars($_POST['nomservice']);
+            $description = htmlspecialchars($_POST['description']);
+            $prix = floatval(htmlspecialchars($_POST['prix']));
+            $type = intval(htmlspecialchars($_POST['type']));
+            $soustype = intval(htmlspecialchars($_POST['soustype']));
+            $temps = htmlspecialchars($_POST['temps']);
+
+            //le PDO
+            $reqservice = $bdd->prepare("DELETE FROM `service` WHERE IDService = ?");
+            $reqservice->execute(array($idservice));
+          }
+
           //charge les informations actuelles du produit
           $reqservice = $bdd->prepare("SELECT * FROM service WHERE IDService = ?");
           $reqservice->execute(array($_GET['IDService']));
@@ -151,6 +166,8 @@
                       <div>
                         <button type="submit" name="formmodifierservice" class="btn btn-success btn-lg"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Modifier</button>
                         <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('administration.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                        <button type="submit" name="formsupservice" class="btn btn-outline-danger btn-lg float-right" onclick="document.location('administration.php')" style="margin-right: 15%;"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;Supprimer</button>
+
                       </div>
                     </form>
 

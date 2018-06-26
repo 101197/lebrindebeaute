@@ -28,11 +28,24 @@
 
               //le PDO
               $reqadmin = $bdd->prepare("UPDATE `admin` SET `PseudoAdmin` = ?, `MailAdmin` = ?, `NomAdmin` = ?, `PrenomAdmin` = ?, `TelephoneAdmin` = ?, WHERE IDAdmin = ?");
-              $reqadmin->execute(array($pseudoadmin, $mailadmin, $nomadmin, $prenomadmin, $telephoneadmin, $idadmin));
+              $reqadmin->execute(array($idadmin));
 
             } else {
               echo "Tous les champs doivent être complétés";
             }
+          }
+
+          if (isset($_POST['formsupprofil'])) {
+            //variables
+            $pseudoadmin = htmlspecialchars($_POST['pseudo']);
+            $mailadmin = htmlspecialchars($_POST['mail']);
+            $nomadmin = htmlspecialchars($_POST['nom']);
+            $prenomadmin = htmlspecialchars($_POST['prenom']);
+            $telephoneadmin = htmlspecialchars($_POST['telephone']);
+
+            //le PDO
+            $reqadmin = $bdd->prepare("DELETE FROM `admin` WHERE IDAdmin = ?");
+            $reqadmin->execute(array($pseudoadmin, $mailadmin, $nomadmin, $prenomadmin, $telephoneadmin, $idadmin));
           }
 
           //charge les informations actuelles du produit
@@ -103,6 +116,8 @@
                       <div>
                         <button type="submit" name="formmodifierprofil" class="btn btn-success btn-lg"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Modifier</button>
                         <button type="button" class="btn btn-danger btn-lg" id="btncancel" onclick="document.location.replace('profil.php')"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Annuler</button>
+                        <button type="submit" name="formsupproduit" class="btn btn-outline-danger btn-lg float-right" style="margin-right: 15%;"><i class="fa fa-trash-o" aria-hidden="true"></i>&nbsp;Supprimer</button>
+
                       </div>
                     </form>
 

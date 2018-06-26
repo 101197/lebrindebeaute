@@ -22,13 +22,15 @@
                 <li class="nav-item"><a class="nav-link active" href="#item-1-1" id="item-1-1-tab" data-toggle="tab" role="tab" aria-controls="item-1-1" aria-selected="true">Clients</a></li>
                 <li class="nav-item"><a class="nav-link" href="#item-1-2" id="item-1-2-tab" data-toggle="tab" role="tab" aria-controls="item-1-2" aria-selected="false">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#item-1-3" id="item-1-3-tab" data-toggle="tab" role="tab" aria-controls="item-1-3" aria-selected="false">Produits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#item-1-4" id="item-1-4-tab" data-toggle="tab" role="tab" aria-controls="item-1-4" aria-selected="false">Admin</a></li>
+
             </ul>
         </div>
         <div class="card-body">
             <div id="nav-tabContent" class="tab-content">
                 <div id="item-1-1" class="tab-pane fade show active" role="tabpanel" aria-labelledby="item-1-1-tab">
                   <h4>Mes clients
-                    <button class="btn btn-info mt-2 float-right" onclick="document.location.href='inscriptionadmin.php'">Nouvel administrateur</button>
+                    <button class="btn btn-info mt-2 float-right" onclick="document.location.href='inscription.php'">Nouveau client</button>
                   </h4>
                   <br>
                   <?php include 'assets/php/tabclients.php'; ?>
@@ -51,6 +53,14 @@
                   <?php include 'assets/php/tabproduits.php'; ?>
 
                 <!--<button class="btn btn-primary" type="button">Button</button>-->
+
+              </div>
+              <div id="item-1-4" class="tab-pane fade" role="tabpanel" aria-labelledby="item-1-4-tab">
+                <h4>Administrateur
+                  <button class="btn btn-info mt-2 float-right" onclick="document.location.href='inscriptionadmin.php'">Nouvel administrateur</button>
+                </h4>
+                <br>
+                <?php include 'assets/php/tabadmin.php'; ?>
                 </div>
     </div>
     </div>

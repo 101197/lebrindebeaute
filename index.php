@@ -31,9 +31,9 @@
             <div class="part3accueil">
               <img src="assets/img/cabine1.jpg" alt="cabine1" class="imgcabine1">
               <p class="textcabine1"><b>Mes prestations:</b> <br><br>Pour retrouver les informations concernant l'emsemble de mes prestations <br> tel que les épilations, les soins du corps ou du visage <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='services'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='services'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Infos&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               <br><br><b>Chez vous:</b><br><br>Continuez ces soins bien-être chez vous!<br> Pour voir les produits disponibles <br><br>
-                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;C'EST PAR LA&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Produits&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>
             <div class="part4accueil">

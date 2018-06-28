@@ -27,7 +27,7 @@
               $nomclient = htmlspecialchars($_POST['nomclient']);
               $prenomclient = htmlspecialchars($_POST['prenomclient']);
               $mailclient = htmlspecialchars($_POST['mailclient']);
-              $telephoneclient = intval(htmlspecialchars($_POST['telephoneclient']));
+              $telephoneclient = htmlspecialchars($_POST['telephoneclient']);
 
               //le PDO
               $reqclient = $bdd->prepare("UPDATE `client` SET `Nom` = ?, `Prenom` = ?, `Mail` = ?, `Telephone` = ? WHERE IDClient = ?");

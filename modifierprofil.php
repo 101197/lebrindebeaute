@@ -12,7 +12,11 @@
     //verification droit d'acces
     if (isset($_SESSION['id'])) {
 
-          $idadmin = $_SESSION['id'];
+      if (!empty($_SESSION['id'])) {
+
+        $idadmin = $_SESSION['id'];
+
+      }
 
           //si le bouton valider est cliqué
           if (isset($_POST['formmodifierprofil'])) {
@@ -28,7 +32,7 @@
 
               //le PDO
               $reqadmin = $bdd->prepare("UPDATE `admin` SET `PseudoAdmin` = ?, `MailAdmin` = ?, `NomAdmin` = ?, `PrenomAdmin` = ?, `TelephoneAdmin` = ?, WHERE IDAdmin = ?");
-              $reqadmin->execute(array($idadmin));
+              $reqadmin->execute(array($pseudoadmin, $mailadmin, $nomadmin, $prenomadmin, $telephoneadmin, $idadmin));
 
             } else {
               echo "Tous les champs doivent être complétés";
@@ -45,10 +49,10 @@
 
             //le PDO
             $reqadmin = $bdd->prepare("DELETE FROM `admin` WHERE IDAdmin = ?");
-            $reqadmin->execute(array($pseudoadmin, $mailadmin, $nomadmin, $prenomadmin, $telephoneadmin, $idadmin));
+            $reqadmin->execute(array($idadmin));
           }
 
-          //charge les informations actuelles du produit
+          //charge les informations actuelles de l'admin
           $reqadmin = $bdd->prepare("SELECT * FROM admin WHERE IDAdmin = ?");
           $reqadmin->execute(array($_SESSION['id']));
           $dbrep = $reqadmin->fetch();

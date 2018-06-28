@@ -31,13 +31,14 @@
 
               //le PDO
               $reqproduit = $bdd->prepare("UPDATE `produit` SET `LibelleProduit` = ?, `DescriptionProduit` = ?, `PrixProduit` = ?, `Categorie` = ? WHERE IDProduit = ?");
-              $reqproduit->execute(array($idproduit));
+              $reqproduit->execute(array($nomproduit, $description, $prix, $categorie, $idproduit));
 
             } else {
               echo "Tous les champs avec * doivent être complétés";
             }
           }
 
+          //si le bouton supprimer est cliqué
           if (isset($_POST['formsupproduit'])) {
             //variables
             $nomproduit = htmlspecialchars($_POST['nomproduit']);
@@ -47,7 +48,7 @@
 
             //le PDO
             $reqproduit = $bdd->prepare("DELETE FROM `produit` WHERE IDProduit = ?");
-            $reqproduit->execute(array($nomproduit, $description, $prix, $categorie, $idproduit));
+            $reqproduit->execute(array($idproduit));
           }
 
           //charge les informations actuelles du produit

@@ -30,15 +30,15 @@
             </div>
             <div class="part3accueil">
               <img src="assets/img/cabine1.jpg" alt="cabine1" class="imgcabine1">
-              <p class="textcabine1"><b>Mes prestations:</b> <br><br>Pour retrouver les informations concernant l'emsemble de mes prestations <br> tel que les épilations, les soins du corps ou du visage <br><br>
+              <p class="textcabine1"><b>Mes prestations :</b> <br><br>Pour retrouver les informations concernant l'emsemble de mes prestations <br> tel que les épilations, les soins du corps ou du visage <br><br>
                 <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='services'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Infos&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-              <br><br><b>Chez vous:</b><br><br>Continuez ces soins bien-être chez vous!<br> Pour voir les produits disponibles <br><br>
+              <br><br><b>Chez vous :</b><br><br>Continuez ces soins bien-être chez vous !<br> Pour voir les produits disponibles <br><br>
                 <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='catalogue'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;Produits&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>
             <div class="part4accueil">
               <img src="assets/img/cabine2.jpg" alt="cabine2" class="imgcabine2">
-              <p class="textcabine2"><i class="fa fa-letter" aria-hidden="true"></i><b>Newsletter</b> <br><br> Pour profiter des offres promotionnelles vous pouvez <br> vous inscrire sur la newsletter, pour cela: <br><br>
+              <p class="textcabine2"><i class="fa fa-letter" aria-hidden="true"></i><b>Newsletter</b> <br><br> Pour profiter des offres promotionnelles vous pouvez <br> vous inscrire sur la newsletter, pour cela : <br><br>
                 <button type="button" name="button" class="btn btn-info gradient btn-lg" onclick="window.location.href='inscription'"><i class="fa fa-angle-double-right" aria-hidden="true"></i>&nbsp;CLIQUEZ ICI&nbsp;<i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
               </p>
             </div>

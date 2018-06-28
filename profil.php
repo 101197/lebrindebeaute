@@ -29,7 +29,7 @@
               <li><b>E-mail: </b><?php echo $dbrep['MailAdmin']; ?></li><br>
               <li><b>Téléphone: </b><?php echo $dbrep['TelephoneAdmin']; ?></li>
             </ul>
-            <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierprofil'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
+            <button type="button" name="button" class="btn btn-info mt-2" onclick="window.location.href='modifierprofil?IDAdmin=?'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Modifier</button>
           </div>
         </div>
       </div>

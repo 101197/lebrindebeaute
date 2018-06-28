@@ -108,7 +108,7 @@
     </table>
 
     <table class="table" style="text-align:center">
-      <h3>Autre soins</h3>
+      <h3>Autres soins</h3>
         <thead>
             <tr>
               <th>Nom</th>

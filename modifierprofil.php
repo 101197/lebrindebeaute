@@ -51,11 +51,11 @@
             $reqadmin = $bdd->prepare("DELETE FROM `admin` WHERE IDAdmin = ?");
             $reqadmin->execute(array($idadmin));
           }
-
           //charge les informations actuelles de l'admin
           $reqadmin = $bdd->prepare("SELECT * FROM admin WHERE IDAdmin = ?");
           $reqadmin->execute(array($_SESSION['id']));
           $dbrep = $reqadmin->fetch();
+
 
           //le resultat remplit les variables
           $pseudoadmin = $dbrep['PseudoAdmin'];
